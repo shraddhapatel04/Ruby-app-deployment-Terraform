@@ -1,5 +1,5 @@
 # Ruby-app-deployment-Terraform
-Deploying a Ruby on Rails Application on AWS using Terraform
+Deploying a Ruby on Rails Application on AWS using Terraform. Please refer to the Diagram 'Ruby on Rails App - Architecture' and follow the steps listed below.
 
 ### Step 1: Create a public private key pair using ssh keygen that would be used to launch the ec2 instances
 ssh-keygen -t rsa
