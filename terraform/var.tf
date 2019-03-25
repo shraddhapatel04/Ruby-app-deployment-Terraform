@@ -22,3 +22,16 @@ variable "ssh_public_key_location" {
   type = "string"
   description = "The location where .pub file is placed"
 }
+
+variable "instance_type" {
+  type = "string"
+  description = "Type of instances to be launched"
+}
+
+# variable "public_subnets" {
+#     description = "List of Public subnets IDs"
+# }
+
+# variable "keypair_name" {
+#     description = "SSH key pair used to launch instances"
+# }
