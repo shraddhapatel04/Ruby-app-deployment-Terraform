@@ -27,11 +27,3 @@ variable "instance_type" {
   type = "string"
   description = "Type of instances to be launched"
 }
-
-# variable "public_subnets" {
-#     description = "List of Public subnets IDs"
-# }
-
-# variable "keypair_name" {
-#     description = "SSH key pair used to launch instances"
-# }
