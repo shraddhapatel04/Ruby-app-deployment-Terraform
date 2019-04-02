@@ -104,3 +104,17 @@ module "loadbalancer" {
     public_subnets = "${module.vpc.public_subnets}"
     asg_id = "${module.application.asg_id}"
 }
+
+####################################
+## RDS DATABASE
+####################################
+
+module "rds" {
+    source = "./rds"
+    name = "${var.name}"
+    subnet_ids = ["${module.vpc.private_subnets}"]
+    vpc_id = "${module.vpc.vpc_id}"
+    cidr = "${var.cidr}"
+    user = "${var.db_user}"
+    password = "${var.db_password}"
+}

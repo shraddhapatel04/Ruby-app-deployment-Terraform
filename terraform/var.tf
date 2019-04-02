@@ -27,3 +27,13 @@ variable "instance_type" {
   type = "string"
   description = "Type of instances to be launched"
 }
+
+variable "db_user" {
+  type = "string"
+  description = "RDS user Name"
+}
+
+variable "db_password" {
+  type = "string"
+  description = "RDS user password"
+}
